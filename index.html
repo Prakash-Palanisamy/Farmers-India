@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmers' India </title>
+
+    <link href="https://playground.anychart.com/geodata/countries/India/iframe" rel="canonical">
+    <meta content="Choropleth Map,Geo Chart,Geo Visualization" name="keywords">
+    <meta content="AnyChart - JavaScript Charts designed to be embedded and integrated" name="description">
+    <link href="css/anychart-ui.min.css" rel="stylesheet" type="text/css">
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/popup.css"/>
+    <link rel="stylesheet" href="./css/slideshow.css" />
+  <style>html, body, #container {
+    width: 100%;
+    height: 100%;
+}
+</style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <a href="#home" class="logo"> Farmers' India </a>
+          <button class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- nav-links -->
+        <ul class="nav-links">
+          <li>
+            <a href="#home">home</a>
+          </li>
+          <li>
+            <a href="#about">about</a>
+          </li>
+          <li>
+            <a href="#crops">Major Crops</a>
+          </li>
+          <li>
+            <a href="#container">Map View</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button class="close-btn" id="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <!-- nav-links -->
+        <ul class="sidebar-links">
+          <li>
+            <a href="#home">home</a>
+          </li>
+          <li>
+            <a href="#about">about</a>
+          </li>
+          <li>
+            <a href="#crops">crops</a>
+          </li>
+          <li>
+            <a href="#container">Map View</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- end of sidebar -->
+    <!-- header -->
+    <header class="hero">
+      
+<div class="slideshow-container" id="home">
+
+<div class="mySlides fade">
+  <img src="images/b1.jpg">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/b2.jpg">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/b3.jpg">
+</div>
+<div class="mySlides fade">
+  <img src="images/b4.jpg">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/b5.jpg">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/b6.jpg">
+</div>
+<div class="mySlides fade">
+  <img src="images/b7.jpg">
+</div>
+
+</div>
+<br>
+<div style="text-align:center">
+      <!-- feedback -->
+      <section class="section-center">
+        <button class="btn hero-btn" id="myBtn">Give your feedback here...</button>
+  
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+      
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>Give your feedback</h1>
+              <form class="container" method="POST" action="/">
+                <div class="feed-input">
+                  <input  name="mail" type="email" placeholder="Enter Your mail id">
+                </div>
+                <div class="feed-text">
+                  <input  name="feedback" type="text" placeholder="Give your feedback">
+                </div>
+              
+                <button class="btn">Submit</button>
+              
+              </form>        
+    
+        </div>
+      
+      </div>
+      </section>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+ 
+ 
+    </div>
+
+<section class="section bg-grey">
+  <!-- section title -->
+  <div class="section-title">
+    <h2>Schemes</h2>
+  </div>
+  <!--end of section title -->
+  <div class="services-center section-center">
+    <!-- single service -->
+    <article class="service">
+      <i class="fa fa-tree service-icon"></i>
+      <h4>	Farmers Welfare</h4>
+      <p>
+        An Act to provide for a national framework on farming agreements that protects
+and empowers farmers to engage with agri-business firms, processors,
+wholesalers, exporters or large retailers for farm services and sale of future
+farming produce at a mutually agreed remunerative price framework in a fair
+and transparent manner and for matters connected therewith or incidental
+thereto.
+BE it enact   <br><br> <a href="http://agricoop.nic.in/sites/default/files/Farming%20Agreement%20Final%20Act%20_4.pdf"><strong>more details&#8594;</strong> </a>
+      </p>
+    </article>
+    <!-- end of single service -->
+    <!-- single service -->
+    <article class="service">
+      <i class="fa fa-quote-right service-icon"></i>
+      <h4>Plant Protection</h4>
+      <p>
+        Plant Quarantine (Regulation of Import into India) Order, 2003 regulates import and prohibition of import of
+plants and plant products into India. The Order was published in the Gazette of India, vide, S.O.1322 (E),
+dated 18thNovember, 2003 and has been subsequently amended vide following notifications:
+<br><br> <a href="http://agricoop.nic.in/sites/default/files/pqorder2015.pdf"><strong>more details&#8594;</strong> </a>
+
+      </p>
+    </article>
+    <!-- end of single service -->
+    <!-- single service -->
+    <article class="service">
+      <i class="fa fa-certificate service-icon"></i>
+      <h4>Agricultural Marketing</h4>
+      <p>
+        This Act empowers farmers to freely sell their produce from farm gate directly
+to the buyers/exporters/processors/retailers who are offering better prices as
+alternative to APMC Markets without paying any market fee in trade area. It
+will help to reduce transportation cost of farmers produce from the farm gate
+to the mandis.
+<br><br> <a href="http://agricoop.nic.in/sites/default/files/FAQ-Trade%26Commerce-08-10-2020_1.pdf"><strong>more details&#8594;</strong> </a>
+      </p>
+    </article>
+    <!-- end of single service -->
+    
+  </div>
+</section>
+<!-- end of services -->
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+    </header>
+    <!-- end of header -->
+
+    <section id="about">
+      <section class="section about">
+        <div class="section-center about-center">
+          <!-- about img -->
+          <article>
+            <img
+              src="./images/agri1.jpg"
+              class="hero-photo"
+              alt="about img"
+            />
+          </article>
+          <!-- about info -->
+          <article class="about-info">
+            <!-- section title -->
+            <div class="section-title about-title">
+              <h2>about us</h2>
+              <div class="underline"></div>
+            </div>
+            <!--end of section title -->
+            <p>
+              <strong>Agriculture is the backbone of the Indian Economy"- said Mahatma Gandhi six decades ago.</strong>  Even today, the situation is still the same, with almost the entire economy being sustained by agriculture, which is the mainstay of the villages. It contributes 16% of the overall GDP and accounts for employment of approximately 52% of the Indian population. Rapid growth in agriculture is essential not only for self-reliance but also to earn valuable foreign exchange.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="section about">
+        <div class="section-center about-center">
+          <!-- about info -->
+          <article class="about-info">
+            <!--end of section title -->
+            <p>Indian farmers are second to none in production and productivity despite of the fact that millions are marginal and small farmers. They adopt improved agriculture technology as efficiently as farmers in developed countries. It is felt that with provision of timely and adequate inputs such as fertilizers, seeds, pesticides and by making available affordable agricultural credit /crop insurance, Indian farmers are going to ensure food and nutritional security to the Nation.It is envisaged to make available relevant information and services to the farming community and private sector through the use of information and communication technologies, to supplement the existing delivery channels provided for by the department. Farmers’ Portal is an endeavour in this direction to create one stop shop for meeting all informational needs relating to Agriculture, Animal Husbandry and Fisheries sectors production, sale/storage of an Indian farmer. With this Indian Farmer will not be required to sift through maze of websites created for specific purposes.
+                </p>
+          </article>
+          <article>
+            <img
+              src="./images/agri2.jpg"
+              class="hero-photo"
+              alt="about img"
+            />
+          </article>
+        </div>
+      </section>
+    </section>
+
+      <section id="crops">
+        <header class="crops-hero">
+          <!-- section title -->
+          <div class="section-title">
+            <h1>Major crops</h1>
+            <div class="underline"></div>
+          </div>
+          <!--end of section title -->
+        </header>
+        <section class="section">
+          <div class="section-center projects-page-center">
+            <!-- single project -->
+            <article class="single-project">
+              <div class="project-container">
+                <img src="./images/maize.jpg" alt="single project" />
+                <a href="#home" class="project-icon">
+                  <i class="fas fa-home"></i>
+                </a>
+              </div>
+              <div class="project-details">
+                <h4>Maize</h4>
+                <p>
+                  Maize (Zea mays L) is one of the most versatile emerging crops having wider adaptability under varied agro-climatic conditions. Globally, maize is known as queen of cereals because it has the highest genetic yield potential among the cereals.
+                </p>
+                <div class="project-footer">
+                 
+                </div>
+              </div>
+            </article>
+            <article class="single-project">
+              <div class="project-container">
+                <img src="./images/rice.jpg" alt="single project" />
+                <a href="#home" class="project-icon">
+                  <i class="fas fa-home"></i>
+                </a>
+              </div>
+              <div class="project-details">
+                <h4>Rice</h4>
+                <p>
+                  India is an important centre of rice cultivation. The rice is cultivated on the largest areas in India. Historians believe that while the indica variety of rice was first domesticated in the area covering the foothills of the Eastern Himalayas
+                </p>
+                <div class="project-footer">
+                </div>
+              </div>
+            </article>
+            <article class="single-project">
+              <div class="project-container">
+                <img src="./images/sugarcane.png" alt="single project" />
+                <a href="#home" class="project-icon">
+                  <i class="fas fa-home"></i>
+                </a>
+              </div>
+              <div class="project-details">
+                <h4>Sugarcane</h4>
+                <p>
+                  Sugarcane (Saccharum officinarum) family Gramineae (Poaceae) is widely grown crop in India. It provides employment to over a million people directly or indirectly besides contributing significantly to the national exchequer.
+                </p>
+                <div class="project-footer">
+                 
+                </div>
+              </div>
+            </article>
+            <article class="single-project">
+              <div class="project-container">
+                <img src="./images/wheate.jpg" alt="single project" />
+                <a href="#home" class="project-icon">
+                  <i class="fas fa-home"></i>
+                </a>
+              </div>
+              <div class="project-details">
+                <h4>Wheat</h4>
+                <p>
+                  Wheat is the main cereal crop in India. The total area under the crop is about 29.8 million hectares in the country. The production of wheat in the country has increased significantly from 75.81 million MT in 2006-07 to an all time record high of 94.88 million MT in 2011-12. 
+                </p>
+                <div class="project-footer">
+                 
+                </div>
+              </div>
+            </article>
+            <article class="single-project">
+              <div class="project-container">
+                <img src="./images/jute.jpg" alt="single project" />
+                <a href="#home" class="project-icon">
+                  <i class="fas fa-home"></i>
+                </a>
+              </div>
+              <div class="project-details">
+                <h4>Jute</h4>
+                <p>
+                  Jute is an important natural fibre crop in India next to cotton. In trade and industry, jute and mesta crop together known as raw jute as their uses are almost same. 
+                </p>
+                <div class="project-footer">
+                 
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      
+
+
+    <section class="section projects" id="img-gallery">
+
+      <div class="section-title">
+        <h2>image gallery</h2>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+      <div class="section-center projects-center">
+        <!-- single project -->
+        <a href="#" class="project-1">
+          <article class="project">
+            <img
+              src="./images/g1.jfif"
+              alt="single project"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h4>Board meeting</h4>
+              <p>16th Dec 2019</p>
+            </div>
+          </article>
+        </a>
+        <!-- end of single project -->
+        <!-- single project -->
+        <a href="#" class="project-2">
+          <article class="project">
+            <img
+              src="./images/g2.jfif"
+              alt="single project"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h4>Board meeting</h4>
+              <p>16th Dec 2019</p>
+            </div>
+          </article>
+        </a>
+        <!-- end of single project --><!-- single project -->
+        <a href="#" class="project-3">
+          <article class="project">
+            <img
+              src="./images/g3.jfif"
+              alt="single project"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h4>Yoga Day Special</h4>
+              <p>16th Dec 2019</p>
+            </div>
+          </article>
+        </a>
+        <!-- end of single project --><!-- single project -->
+        <a href="#" class="project-4">
+          <article class="project">
+            <img
+              src="./images/rice.jpg"
+              alt="single project"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h4>Board meeting</h4>
+              <p>16th Dec 2019</p>
+            </div>
+          </article>
+        </a>
+        <!-- end of single project -->
+      </div>
+
+    </section>
+
+    
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks the button, open the modal 
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+
+    
+
+
+
+<div id="container"> 
+          
+</div>
+
+<script src="js/proj4.js"></script>
+<script src="js/anychart-base.min.js"></script>
+<script src="js/anychart-map.min.js"></script>
+<script src="js/anychart-exports.min.js"></script>
+<script src="js/anychart-ui.min.js"></script>
+<script src="js/india.js"></script>
+<script src="js/data.js"></script>
+<script type="text/javascript">anychart.onDocumentReady(function() {
+// create map
+var map = anychart.map();
+
+
+
+// create choropleth series
+series = map.choropleth(dataSet);
+
+// set geoIdField to 'id', this field contains in geo data meta properties
+series.geoIdField('id');
+
+// set map color settings
+series.colorScale(anychart.scales.linearColor('#deebf7', '#3182bd'));
+series.hovered().fill('#addd8e');
+
+// set geo data, you can find this map in our geo maps collection
+// https://cdn.anychart.com/#maps-collection
+map.geoData(anychart.maps['india']);
+
+//set map container id (div)
+map.container('container');
+
+//initiate map drawing
+map.draw();
+});</script>
+
+
+
+<section>
+  <div class="section-center">
+  <div id="myData" class="service">
+    
+  </div>
+
+  </div>
+  <script>
+      fetch('/crops')
+          .then(function (response) {
+              return response.json();
+          })
+          .then(function (data) {
+              appendData(data);
+          })
+          .catch(function (err) {
+              console.log('error: ' + err);
+          });
+      function appendData(data) {
+           var mainContainer = document.getElementById("myData");
+           for (var i = 0; i < data.length; i++) {
+               var div = document.createElement("div");
+  
+
+               // div.innerHTML +=  '<td>' + data[i].State_Name + '</td>';
+               // div.innerHTML +=  '<td>' + data[i].District_Name + '</td>';
+
+               document.getElementById("myData").innerHTML +=
+
+              // " <table> <th>"+data[i].State_Name+"</th><th>"+data[i].District_Name+"</th> <th>"+data[i].Crop_Year+"</th>  <th>"+data[i].Season+"</th>  <th>"+data[i].Crop+"</th> <th>"+data[i].Area+"</th></table>"
+                "<div> <h4>"+data[i].State_Name+" </h4></div>"
+
+                 document.getElementById("myData").innerHTML += "<p>Crop_Year:"+data[i].Crop_Year+"</p>"
+                document.getElementById("myData").innerHTML += "<p>Season:"+data[i].Season+"</p>"
+                document.getElementById("myData").innerHTML += "<p>Crop :"+data[i].Crop+"</p>"
+                document.getElementById("myData").innerHTML += "<p>Area :"+data[i].Area+"</p>"
+
+
+              
+              
+               mainContainer.appendChild(div);
+           }
+      }
+  </script>
+  
+</section>
+
+   
+
+    <!-- footer -->
+    <section class="f-padding">
+      <footer class="footer">
+        <br>
+        <p>&copy; <span id="date"></span>  Farmers' India. all rights reserved</p>
+      </footer> 
+    </section>
+   
+    <script src="./js/app.js"></script>
+    <script src="./js/slider.js"></script>
+  </body>
+</html>
